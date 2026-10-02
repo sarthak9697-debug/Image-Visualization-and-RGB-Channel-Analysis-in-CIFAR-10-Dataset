@@ -6,7 +6,7 @@ import tensorflow as tf
 # 1. Load the model once into memory
 @st.cache_resource
 def load_keras_model():
-    return tf.keras.models.load_model("cifar10_model.keras", compile=False)
+    return tf.keras.models.load_model("model.keras", compile=False)
 
 model = load_keras_model()
 
